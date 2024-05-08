@@ -1,6 +1,6 @@
 const TempDetails = () => {
     return ( <h1>
-        Temp Details
+        Temp Details t
     </h1> );
 }
  
