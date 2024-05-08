@@ -1,44 +1,4 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -104,4 +64,234 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+
+
+.home {
+  position: relative;
+}
+
+
+.myimage {
+  position: absolute;
+  top: 10%;
+  right: 100%;
+  width: 200px;
+  margin-right: 20px;
+  height: auto;
+
+}
+
+.btn {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  transition: .6s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 15px white;
+  font-weight: bold;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 25%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-overlay2 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  margin: 20px;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+ 
+  position: relative;
+  display: inline-block;
+
+  outline: none;
+}
+
+.btn-7 {
+  background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.btn-7 span:hover:before {
+  height: 100%;
+}
+
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+
+.title {
+  color: black;
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnBigRed {
+  background-color: green;
+  flex-wrap: wrap;
+  background-image:
+    linear-gradient(167deg,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(0, 0, 0, 0) 55%),
+    linear-gradient(top,
+      rgba(255, 255, 255, 0.15),
+      rgba(0, 0, 0, 0));
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px green inset,
+    0 0 0 2px green inset,
+    0 8px 0 0 green,
+    0 8px 0 1px rgba(0, 0, 0, 0.4),
+    0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  display: inline-block;
+  font-family: "Lucida Grande", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  height: 61px;
+  letter-spacing: -1px;
+  line-height: 61px;
+  margin: 60px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-decoration: none !important;
+  top: 0;
+  width: 186px;
+  transition: 0.15s;
+  padding: 8px;
+}
+
+
+
+@media (max-width: 768px) {
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-overlay {
+    top: 50%;
+  }
+
+  .text-overlay h1 {
+    font-size: 20px;
+  }
+
+  .text-overlay h3 {
+    font-size: 15px;
+  }
+
+  .me {
+    width: 100px;
+  }
+
+  .btnBigRed {
+    margin: 10px;
+    width: 300px;
+  }
+}
+.navbar-brand {
+  float: left;
+  display: block;
+  height: 5%;
+  width: 5%;
+}
+
+.navbar-nav {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-nav li {
+  display: inline-block;
+}
+
+.navbar-nav li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-nav li a:hover {
+  background-color: #555;
+}
+
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
 }
