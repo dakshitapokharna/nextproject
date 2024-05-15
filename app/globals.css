@@ -241,7 +241,7 @@ button {
   }
 
   .text-overlay {
-    top: 50%;
+    margin-top: 20%;
   }
 
   .text-overlay h1 {
@@ -264,8 +264,8 @@ button {
 .navbar-brand {
   float: left;
   display: block;
-  height: 5%;
-  width: 5%;
+  height: 10%;
+  width: 6%;
 }
 
 .navbar-nav {
